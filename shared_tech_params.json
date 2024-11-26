@@ -1,0 +1,15 @@
+{
+    "assets": {
+        "AAC": {
+            "name": "exitintent",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1511633983319x644103484693914600/jquery.exitintent.min.js"
+        },
+        "AAF": {
+            "name": "bounceback",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1511634801837x947863827459514100/bounceback.min.js"
+        }
+    },
+    "dependencies": {
+        "use_jquery": true
+    }
+}

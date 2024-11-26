@@ -1,0 +1,57 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 32,
+        "width": 32
+    },
+    "display": "Exit Intent",
+    "edit_mode_image": "//s3.amazonaws.com/appforest_uf/f1511637935018x887010026257485200/exit32.png",
+    "events": {
+        "AAE": {
+            "caption": "User is about to exit",
+            "doc": "Fires when user is about to exit",
+            "name": "user_is_about_to_exit"
+        }
+    },
+    "fields": {
+        "AAH": {
+            "caption": "Distance",
+            "default_val": 100,
+            "doc": "The minimum distance in pixels from the top of the page to consider triggering for.",
+            "editor": "StaticNumber",
+            "name": "distance",
+            "rank": 2
+        },
+        "AAI": {
+            "caption": "Method",
+            "default_val": "Auto",
+            "doc": "The bounce detection method. Auto: Automatically picks a method based on the device type. Mouse is used for desktop browsers and history for mobile.  Mouse: This detects bounces based on the mouse's direction, velocity and distance from the top of the page.  history: This method uses the HTML5 History APIs (or hashes when in an older browser) to duplicate the page in the history. Then when the visitor clicks to go back Bounceback detects the navigation and shows the dialog. This method is almost foolproof, but could annoy some users. It works best for mobile browsers.",
+            "editor": "Dropdown",
+            "name": "method",
+            "options": "Mouse,History,Auto",
+            "rank": 0
+        },
+        "AAK": {
+            "caption": "Mouse fires when the mouse leaves the page (for desktops). History fires when the back button is pressed (for mobile browsers). Auto uses Mouse on desktops and History on mobiles.",
+            "editor": "Label",
+            "name": "method_info",
+            "rank": 1
+        },
+        "AAL": {
+            "caption": "The minimum distance in pixels from the top of the page to consider triggering for.",
+            "editor": "Label",
+            "name": "distance_info",
+            "rank": 4
+        },
+        "AAN": {
+            "caption": "Number of triggers",
+            "default_val": 1,
+            "editor": "DynamicValue",
+            "name": "number_of_triggers",
+            "rank": 3,
+            "value": "number"
+        }
+    },
+    "icon": "ion-android-exit"
+}
